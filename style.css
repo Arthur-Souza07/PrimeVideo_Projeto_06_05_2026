@@ -1,12 +1,70 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-body {
-    padding: 0;
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+body {
     min-height: 100vh;
     color: white;
     font-family: 'Montserrat', Arial, sans-serif;
     background: linear-gradient(to right, #01071c, #070a14, #01071c);
     background-attachment: fixed;
+}
+.btn-prime {
+    background-color: #0266e0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-assista {
+    display: inline-block;
+    width: fit-content;
+    background-color: white;
+    color: #142033;
+    border: none;
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+.search-btn, .menu-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfil-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #f2f4f6;
+}
+.arrow-down {
+    font-size: 10px;
 }
 .navbar {
     display: flex;
@@ -21,7 +79,7 @@ body {
     gap: 30px;
     margin-left: 45px;
 }
-.logo-img-cima{
+.logo-img-cima {
     display: block;
     cursor: pointer;
     overflow: hidden;
@@ -32,6 +90,22 @@ body {
     width: 90px;
     height: auto;
     flex-shrink: 0;
+}
+.navbar-left ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+} 
+.navbar-left ul li a {
+    text-decoration: none;
+    color: #f2f4f6;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+    display: flex; 
+    align-items: center;
+    letter-spacing: 0.5px;
 }
 .nav-divider {
     color: #425265;
@@ -57,68 +131,10 @@ body {
     flex-shrink: 0;
     cursor: pointer;
 }
-.navbar-left ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 25px;
-    align-items: center;
-} 
-.navbar-left ul li a {
-    text-decoration: none;
-    color: #f2f4f6;
-    gap: 6px;
-    font-size: 14px;
-    font-weight: bolder;
-    display: flex; 
-    align-items: center;
-    letter-spacing: 0.5px;
-}
 .user-actions {
     display: flex;
     align-items: center;
     gap: 18px;
-}
-.search-btn, .menu-btn {
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.language-selector {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #f2f4f6;
-}
-.arrow-down {
-    font-size: 10px;
-}
-.perfil-avatar {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.btn-prime {
-    background-color: #0266e0;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: 'Montserrat';
-    cursor: pointer;
-    white-space: nowrap;
 }
 .hero-section {
     display: flex;
@@ -126,7 +142,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 80vh;
-    display: flex;
     padding: 0 8%;
     background-image: linear-gradient(to right, rgb(0, 0, 0) 50%, rgba(1, 7, 28, 0) 100%), url('imagem/movie-grid.png');
     background-size: 100% 100%, 120vh 80vh;
@@ -163,20 +178,6 @@ body {
     gap: 20px;
     padding-bottom: 0px;
 }
-.btn-assista {
-    display: inline-block;
-    width: fit-content;
-    background-color: white;
-    color: #142033;
-    border: none;
-    padding: 20px 20px;
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 4px;
-    cursor: pointer;
-    letter-spacing: 0.3px;
-    white-space: nowrap;
-}
 .login-text {
     margin-top: 25px;
     font-size: 12px;
@@ -205,7 +206,7 @@ body {
 .footer-logo img {
     object-fit: cover;
     width: 90px;
-    height:auto;
+    height: auto;
     flex-shrink: 0;
 }
 .footer-links {
